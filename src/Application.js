@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import HighScore from './HighScore';
 class Application extends Component {
     constructor(props){
         super(props);
@@ -26,6 +26,8 @@ class Application extends Component {
         return (
             <div>
                 <h1> You clicked the button {count} times!</h1>
+                <HighScore />
+                
                 {
                     (this.state.overTen)?
                     <h3>Beat the highscore to 10!!</h3>
